@@ -13,7 +13,7 @@ terraform {
     }
   }
 }
-
+ 
 provider "snowflake" {
   // required
   account = "sva13985"
