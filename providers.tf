@@ -5,6 +5,13 @@ terraform {
       version = "~> 0.25.18"
     }
   }
+  backend "remote" {
+    organization = "tfe-sfc-telemetry"
+
+    workspaces {
+      name = "tfe-sfc-telemetry"
+    }
+  }
 }
 
 provider "snowflake" {
