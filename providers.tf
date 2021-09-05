@@ -27,9 +27,12 @@ provider "snowflake" {
 }
 
 provider "snowflake" {
-  alias    = "securityadmin"
+  alias    = "security_admin"
   role     = "SECURITYADMIN"
   account  = "sva13985"
   region   = "us-east-1"
   username = "prune"
+}
+
+provider "tls" {
 }
