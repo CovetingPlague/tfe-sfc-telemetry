@@ -4,6 +4,10 @@ terraform {
       source  = "chanzuckerberg/snowflake"
       version = "~> 0.25.18"
     }
+    tls = {
+      source  = "hashicorp/tls"
+      version = "3.1.0"
+    }
   }
   backend "remote" {
     organization = "tfe-sfc-telemetry"
