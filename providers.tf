@@ -16,8 +16,9 @@ terraform {
 
 provider "snowflake" {
   // required
-  account = "sva13985"
-  region  = "us-east-1"
+  account  = "sva13985"
+  region   = "us-east-1"
+  username = "prune"
 
   //region info can be found in https://docs.snowflake.com/en/user-guide/admin-account-identifier.html#snowflake-region-ids
 
@@ -26,8 +27,9 @@ provider "snowflake" {
 }
 
 provider "snowflake" {
-  alias   = "securityadmin"
-  role    = "SECURITYADMIN"
-  account = "sva13985"
-  region  = "us-east-1"
+  alias    = "securityadmin"
+  role     = "SECURITYADMIN"
+  account  = "sva13985"
+  region   = "us-east-1"
+  username = "prune"
 }
